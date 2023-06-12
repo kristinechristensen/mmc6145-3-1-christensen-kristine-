@@ -36,16 +36,6 @@ export default function Search() {
 
   async function handleSubmit(e) {
     e.preventDefault()
-    
-  /******************************************************************
-   * Questions: 
-   * Why does the screen go blank when searching for a book?
-   *  
-   * 
-   * 
-   * ****************************************************************/
-  
-
 
     //prevent if fetch is not finished
     if(fetching) return
