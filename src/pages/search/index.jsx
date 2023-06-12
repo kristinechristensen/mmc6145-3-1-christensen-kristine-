@@ -6,7 +6,7 @@ export default function Search() {
   // stores search results
   const [bookSearchResults, setBookSearchResults] = useState()
   // stores value of input field - set the initial state to "React"
-  const [query, setQuery] = useState("React")
+  const [query, setQuery] = useState("")
   // compare to query to prevent repeat API calls
   const [previousQuery, setPreviousQuery] = useState()
   // used to prevent rage clicks on form submits
@@ -19,7 +19,7 @@ export default function Search() {
   //load books from the URL with REACT
   useEffect( ()=> {
     async function fetchBooks(){
-      const res = await fetch(`https://www.googleapis.com/books/v1/volumes?langRestrict=en&maxResults=16&q=${query}`)
+      const res = await fetch(`https://www.googleapis.com/books/v1/volumes?langRestrict=en&maxResults=16&q=React`)
       const data = await res.json()
     }
     fetchBooks()
