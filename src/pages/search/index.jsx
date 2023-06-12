@@ -35,7 +35,6 @@ export default function Search() {
 
   async function handleSubmit(e) {
     e.preventDefault()
-    
     //prevent if fetch is not finished
     if(fetching) return
     
