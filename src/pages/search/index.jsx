@@ -5,7 +5,7 @@ import styles from './style.module.css'
 export default function Search() {
   // stores search results
   const [bookSearchResults, setBookSearchResults] = useState()
-  // stores value of input field - set the initial state to "React"
+  // stores value of input field 
   const [query, setQuery] = useState("")
   // compare to query to prevent repeat API calls
   const [previousQuery, setPreviousQuery] = useState()
