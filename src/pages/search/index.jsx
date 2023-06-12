@@ -21,7 +21,6 @@ export default function Search() {
     async function fetchBooks(){
       const res = await fetch(`https://www.googleapis.com/books/v1/volumes?langRestrict=en&maxResults=16&q=${query}`)
       const data = await res.json()
-     
     }
     fetchBooks()
   }, []);
@@ -37,16 +36,6 @@ export default function Search() {
   async function handleSubmit(e) {
     e.preventDefault()
     
-  /******************************************************************
-   * Questions: 
-   * Why does the screen go blank when searching for a book?
-   *  
-   * 
-   * 
-   * ****************************************************************/
-  
-
-
     //prevent if fetch is not finished
     if(fetching) return
     
